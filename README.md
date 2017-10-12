@@ -27,14 +27,21 @@ The temperature monitoring device has a small opening in the bottom exposing the
 ![Enclosure with electronics exposed](/images/exposed.jpg)
 
 ### Technical Details
-The “sweater weather” device communicates with the soil moisture device via Particle’s event cloud system. “Sweater Weather” is subscribed to 3 different events from the soil moisture device:
 
+#### Device Communication
+The “sweater weather” device uses a two-way communication system to transfer data between my device and the soil moisture device. They communicate with each other using the Particle’s event cloud system. My device publishes either 2 of the following events depending on the pertinent sweater value: 
+```
+Particle.publish("sweater");
+Particle.publish("nosweater");
+```
+
+“Sweater Weather” is subscribed to 3 different events from the soil moisture device:
 ```
 Particle.subscribe("Sandals", sandalsHandler, "320039001751353432393433");
 Particle.subscribe("Rainboots", rainbootsHandler, "320039001751353432393433");
 Particle.subscribe("Sneakers", sneakersHandler, "320039001751353432393433");
 ```
-When either of the 3 events above (“Sandals”, “Rainboots”, or “Sneakers”) is triggered, the title of the event name is displayed in an LCD widget within the Blynk app. For instance, when the “Sandals” event is triggered, the string “Sandals” is displayed within the LCD Widget. All event handlers follow the same format as the snippet below:
+When either of the 3 events above (“Sandals”, “Rainboots”, or “Sneakers”) is triggered, the title of the event name is displayed in an LCD widget within the Blynk app. For instance, when the “Sandals” event is triggered, the string “Sandals” is displayed within the LCD Widget. All handlers follow the same format as the snippet below:
 
 ```
 void sandalsHandler(const char *event, const char *data)
