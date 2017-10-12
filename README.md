@@ -13,8 +13,10 @@ Date: October 12th 2017
 
 ### Form
 
-/// Your project should be embodied in a ***physical form*** that reflects, embodies, and/or amplifies those your project's main concepts and ideas.
-Explain your design choices here and include images that document your project's material embodiment. ///
+The purpose of this enclosure is to introduce a service that camouflages into the user’s daily lives. Our devices need to be placed outdoors to provide the user with accurate temperature and soil moisture data. With this in mind, we have decided to hook our devices on a flower pot that could be placed in the user’s desired area (in our case, we would place it on the main quad in west campus). The flower pot provides the user with the portability and freedom of placing it in their desired area and moving it as needed. Our enclosures hook the devices on the edges of the pot providing easy installation and can be moved to other flower pots. 
+
+The temperature monitoring device has a small opening in the bottom exposing the RHT03 temperature/humidity sensor to the open. The enclosure is *mostly* waterproof to protect the machinery inside. A 9V battery (which is also contained within the enclosure) powers the devices and therefore a computer is not needed to use the weather wear service. 
+
 
 **Finished Enclosure:**
 
