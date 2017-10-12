@@ -28,6 +28,10 @@ The temperature monitoring device has a small opening in the bottom exposing the
 
 ### Technical Details
 
+#### Sweater Weather Device
+The “Sweater Weather” device uses the [Sparkfun RHT03 Humidity and Temperature Sensor](https://www.sparkfun.com/products/10167) to read the temperature of the desired location. Through the Blynk app, the user specifies the temperature at which he/she usually wear sweaters and is then prompted on whether the user should wear a sweater that day given the current temperature. 
+
+![Blynk Demo for Sweater Weather](/images/blynk-demo.png)
 #### Device Communication
 The “sweater weather” device uses a two-way communication system to transfer data between my device and the soil moisture device. They communicate with each other using the Particle’s event cloud system. My device publishes either 2 of the following events depending on the pertinent sweater value: 
 ```
