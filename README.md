@@ -27,22 +27,26 @@ The temperature monitoring device has a small opening in the bottom exposing the
 ![Enclosure with electronics exposed](/images/exposed.jpg)
 
 ### Technical Details
-//   
-Here you should give an overview of the technical operation of your device, including:
-* A wiring diagram
-* list of hardware used
-* Explanation of your
-* Link to code   
-
-//
-
-You can include code snippets here:
+The “sweater weather” device communicates with the soil moisture device via Particle’s event cloud system. “Sweater Weather” is subscribed to 3 different events from the soil moisture device:
 
 ```
-Particle.subscribe("Execute", messageParse, MY_DEVICES);
+Particle.subscribe("Sandals", sandalsHandler, "320039001751353432393433");
+Particle.subscribe("Rainboots", rainbootsHandler, "320039001751353432393433");
+Particle.subscribe("Sneakers", sneakersHandler, "320039001751353432393433");
+```
+When either of the 3 events above (“Sandals”, “Rainboots”, or “Sneakers”) is triggered, the title of the event name is displayed in an LCD widget within the Blynk app. For instance, when the “Sandals” event is triggered, the string “Sandals” is displayed within the LCD Widget. All event handlers follow the same format as the snippet below:
+
+```
+void sandalsHandler(const char *event, const char *data)
+{
+    shoesInstruct.clear();
+    delay(2500);
+    shoesInstruct.print(0,0, "Sandals");
+    Serial.print("Sandals \n");
+}
 ```
 
-but also link to your project's full code in this repository:  [photon.ino](photon.ino)
+Please refer to [photon.ino](photon.ino) for the full code. 
 
 **Wiring Diagram**
 
