@@ -131,13 +131,13 @@ void sweaterWeather(int temp)
         Particle.publish("sweater");
         Serial.print("published sweater event \n");
         sweaterInstruct.print(0,0, "sweater");
+        Blynk.email("weatherwear.data@gmail.com", "User Clothing Data", "The user wore a Sweater");
     }
     else 
     {
         Particle.publish("nosweater");
         Serial.print("published no sweater event \n");
         sweaterInstruct.print(0,0, "no sweater");
+        Blynk.email("weatherwear.data@gmail.com", "User Clothing Data", "The user did not wear a Sweater");
     }
 }
-
-
