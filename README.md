@@ -1,10 +1,11 @@
 # Midterm IoT Project
 
-Name:  
+Name: Stephanie Fiddy 
 
-Date:
+Date: October 12th 2017
 
-## Project: "Brand Name" or Device Name
+## Project: Weather Wear
+![Logo](/images/logo.png)
 
 ### Conceptual Description
 
@@ -17,11 +18,11 @@ Explain your design choices here and include images that document your project's
 
 **Finished Enclosure:**
 
-![Finished Enclosure](finished_enclosure.jpg)
+![Finished Enclosure](/images/enclosure.jpg)
 
 **Electronics Exposed:**
 
-![Enclosure with electronics exposed](exposed_enclosure.jpg)
+![Enclosure with electronics exposed](/images/exposed.jpg)
 
 ### Technical Details
 //   
@@ -43,4 +44,4 @@ but also link to your project's full code in this repository:  [photon.ino](phot
 
 **Wiring Diagram**
 
-![Wiring Diagram](WiringDiagram.png)
+![Wiring Diagram](/images/fritzing.jpg)
