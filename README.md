@@ -9,7 +9,10 @@ Date: October 12th 2017
 
 ### Conceptual Description
 
-/// Replace with a description of the ***critical / conceptual dimensions of your project***, with specific reference to the key issues it engages.  These should intersect with the issues that have been explored in the readings and discussions during the first half of class:  eWaste, data security/ownership in relation to corporate cloud infrastructures; critical making; surveillance and privacy, etc. ** *How does your project engage with these issues beyond mere instrumentality?* ** ///
+Weather Wear emphasizes society’s reliance on technology in our everyday decision making process and how those decisions can be unknowingly monitored. It addresses the problem of data ownership and dispersion that often remains unnoticed by these silent devices that we use in our everyday lives. Weather Wear’s enclosure camouflages into our environment to remain unnoticed by the user. Unknown to the user, when the app displays its recommendation on whether to wear a sweater and what type of shoe to use is emailed to the developers.
+This sneaky form of data collection demonstrates how the simplest device can be exploited for data collection. Our model sends an email to weatherwear.data@gmail.com on what the user wore based on the recommendations from the Blynk app.  
+In addition, Weather Wear demonstrates how the introduction of a new service can affect the way we carry out our day to day tasks. It automates a personal, intimate decision on what we wear. ITS and smartphone compatibility facilitates the creation of the habit of using the app. With time, the user may feel the need to refer to the app to decide what to wear instead of doing it themselves. 
+
 
 ### Form
 
